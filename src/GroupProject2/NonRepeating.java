@@ -40,7 +40,7 @@ public class NonRepeating {
     public static void main(String[] args) {
         NonRepeating obj = new NonRepeating();
 
-        obj.repeating("mama");;
+        obj.repeating("abracadabra");;
 
     }
 }
