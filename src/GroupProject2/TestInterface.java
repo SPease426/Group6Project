@@ -4,7 +4,7 @@ public class TestInterface extends RemoteWebDriver {
     public static void main(String[] args) {
         RemoteWebDriver chrome = new ChromeDriver();
         RemoteWebDriver firefox = new FireFoxDriver();
-        RemoteWebDriver microsoftEdge = new MicrosoftEdgeDriver();
+        RemoteWebDriver safari = new safariDriver();
 
 
         chrome.open("Chrome");
@@ -19,10 +19,10 @@ public class TestInterface extends RemoteWebDriver {
         firefox.getScreenshot("FireFox");
         firefox.close("FireFox");
 
-        microsoftEdge.open("microsoftEdge");
-        microsoftEdge.navigate("www.GameFly.com");
-        System.out.println("Title of website is " + microsoftEdge.getTitle());
-        microsoftEdge.getScreenshot("Microsoft Edge");
-        microsoftEdge.close("Microsoft Edge");
+        safari.open("microsoftEdge");
+        safari.navigate("www.GameFly.com");
+        System.out.println("Title of website is " + safari.getTitle());
+        safari.getScreenshot("Microsoft Edge");
+        safari.close("Microsoft Edge");
     }
 }
